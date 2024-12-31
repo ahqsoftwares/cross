@@ -17,8 +17,8 @@ RUN /solaris.sh x86_64 pc
 
 COPY toolchain.cmake /opt/toolchain.cmake
 
-ENV CROSS_TOOLCHAIN_PREFIX=x86_64-pc-solaris2.10-
-ENV CROSS_SYSROOT=/usr/local/x86_64-pc-solaris2.10
+ENV CROSS_TOOLCHAIN_PREFIX=x86_64-pc-solaris2.11-
+ENV CROSS_SYSROOT=/usr/local/x86_64-pc-solaris2.11
 ENV CARGO_TARGET_X86_64_PC_SOLARIS_LINKER="$CROSS_TOOLCHAIN_PREFIX"gcc \
     AR_x86_64_pc_solaris="$CROSS_TOOLCHAIN_PREFIX"ar \
     CC_x86_64_pc_solaris="$CROSS_TOOLCHAIN_PREFIX"gcc \
